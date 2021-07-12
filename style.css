@@ -8,6 +8,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f3f1ff;
+   
 }
  main{
     display: flex;
@@ -27,10 +28,52 @@ hr{
     border: 1px solid #d1d1d1;
     margin-bottom: 27px;
 }
-/*top players style*/
-.top-players{
-    margin-bottom: 30px;
+/*header css*/
+header{
+    background: rgb(73, 73, 228);
+    height: 95px;
+    display: flex;
+    justify-content: center;
 }
+.navigation{
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+   
+}
+.logo img{
+    height: 40px;
+    height: 50px;
+    
+}
+.logo-text{
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    
+}
+.nav-list li a{
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+}
+.nav-list li a:hover{
+    color: #e7e2e2;
+    font-size: 400;
+}
+
 
 .section-title{
     color: #562eff;
@@ -117,8 +160,9 @@ hr{
 .course-duration{
     background-color: rgb(248, 191, 191);
     color: rgb(238, 77, 77);
-    border-radius: 12px;
-    padding: 5px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 6px 7px;
 
     
 }
@@ -127,9 +171,12 @@ hr{
 
 /* Mobile Devices*/
 
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:688px) and (max-width: 992px) {
+    .navigation{
+        padding: 0 30px;
+    }
     .container{
-        width: 100%;
+        width: 90%;
     }
     .players, .blogs, .courses{
         
